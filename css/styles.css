@@ -1,3 +1,10 @@
+/* CUSTOM PROPS */
+:root {
+  --primary: #EA625C;
+  text-color: #777;
+}
+
+
 /* GLOBL */
 html {
   height: 100%;
@@ -16,12 +23,12 @@ body {
   flex-direction: column;
   height: 100%;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.5;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   background-color: #fff;
-  color: #222;
+  color: var(text-color);
 }
 
 img {
@@ -31,9 +38,9 @@ img {
 
 
 /* CONTAINER */
-.cotainer {
+.container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1100px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;

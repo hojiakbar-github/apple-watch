@@ -1,7 +1,8 @@
 /* CUSTOM PROPS */
 :root {
   --primary: #EA625C;
-  text-color: #777;
+  --text-color: #333;
+  --primary-dark: #c9514c;
 }
 
 
@@ -50,6 +51,29 @@ img {
   padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  background-color: var(--primary);
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 38px;
+  border-radius: 10px;
+  line-height: 1.5;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--primary-dark);
+}
+
+.button:active {
+  opacity: 0.6;
 }
 
 
@@ -127,4 +151,56 @@ img {
   padding-bottom: 6px;
   border: 0;
   border-bottom: 1px solid #333;
+}
+
+
+/* HERO */
+.hero {
+  padding-top: 140px;
+  padding-bottom: 185px;
+  border-bottom: 2px solid #ddd;
+  background-image: url("../img/intro-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 550px) bottom;
+}
+
+/* LEAD-CTA */
+.lead-cta {
+  width: 100%;
+  max-width: 490px;
+}
+.lead-cta-heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 50px;
+  line-height: 1.2;
+  color: #000;
+}
+.lead-cta-text {
+  padding-left: 37px;
+  border-left: 3px solid #888;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #777;
+}
+
+.hero-img {
+  width: 575px;
+  height: 565px;
+}
+
+
+/* RETINA BG */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .hero {
+    background-image: url("../img/intro-bg@2x.jpg");
+  }
+
 }
